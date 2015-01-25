@@ -20,6 +20,8 @@ This repository contains 3 files
 
 ##Steps followed for solving the course project
 
-<b>Preliminary work</b>- Downloading and uzipping the data file from the url using R. Getting familiar with the datasets, looking through each file, getting information about the data it contains using str() and summary(). 
+<b>Preliminary work</b> - Downloading and uzipping the data file from the url using R. Getting familiar with the datasets, looking through each file, getting information about the data it contains using str() and summary().
+<b>Course Project Step1</b> - We have two file folders - "train" and "test". First step is to combine the "X", "y" and "subject" files into one dataset for both "train" and "test" results. "X", "y" and "subject" files in the "train" folder correspond to the "X", "y" and "subject" in the "test" folder because they represent different observations on same variables. So our next step is to rbind the two combined datasets. 
+
 
 
