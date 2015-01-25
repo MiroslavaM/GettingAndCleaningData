@@ -4,12 +4,12 @@
 ###ActivityLabel 
     type - character 
     Values: walking, walking_upstairs, walking_downstairs,sitting, standing,laying
-    An identifier of the activity
-###Subject<br>
-    type - integer<br>
-    range: 1 - 30<br>
-    An identifier of the subject who carried out the experiment<br>
-###Measurement Means<br>
+    An identifier of the activity type
+###Subject
+    type - integer
+    range: 1 - 30
+    An identifier of the subject who carried out the experiment
+###Measurement Means
     type - numeric
     featers variables
     Means of the measured feature variables for each activity and each subject. 
