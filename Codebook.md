@@ -1,9 +1,9 @@
 #Codebook
 
 ##Variables from the transformed (final) dataset
-###ActivityLabel <br>
-    type - character <br>
-    Values: walking, walking_upstairs, walking_downstairs,sitting, standing,laying<br><br>
+###ActivityLabel 
+    type - character 
+    Values: walking, walking_upstairs, walking_downstairs,sitting, standing,laying
     An identifier of the activity
 ###Subject<br>
     type - integer<br>
