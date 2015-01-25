@@ -1,10 +1,12 @@
+setwd("C:/Users/Mirenceto/Desktop/Coursera/Data Science Specialization")
+
 #Loading plyr and dplyr packages
 library(plyr)
 library(dplyr)
 
 ##Check to see if the directory exists and if doesn't create it
-if (!file.exists("cpdata")){
-    dir.create("cpdata")
+if (!file.exists("./cpdata")){
+    dir.create("./cpdata")
 }
 
 ##Check to see if the file exists and if doesn't downoload and extract it.
@@ -48,6 +50,7 @@ dtTidy <- select(dtCombAll, contains("mean"), contains("std"), ActivityCode, Sub
 ##Use descriptive activity names to name the activities in the data set
 actLabels <- read.table("./activity_labels.txt", stringsAsFactors = FALSE)
 colnames(actLabels) <- c("ActivityCode", "ActivityLabel")
+actLabels[ ,2] <- tolower(actLabels[ ,2])
 dtTidy <- join(dtTidy, actLabels, by = "ActivityCode")
 
 ##Cleaning the dataset by removing the ActivityCode as we have the labeled info in ActivityLabel
@@ -56,10 +59,15 @@ dtTidy <- select(dtTidy, - ActivityCode)
 ##Appropriately label the data set with descriptive variable names. 
 ##We already did part of this using the function make.names (line 41), which transformed all names from features.txt to valid R names, before assigning them to our dataset. 
 ##Remove the "..." and make the names in camel case (easier for reading) 
-colnames(dtTidy) <- gsub ("[/././.]", "", colnames(dtTidy))
-colnames(dtTidy) <- gsub ("mean", "Mean", colnames(dtTidy))
-colnames(dtTidy) <- gsub ("std", "Std", colnames(dtTidy))
-
+colnames(dtTidy) <- gsub("[/././.]", "", colnames(dtTidy))
+colnames(dtTidy) <- gsub("mean", "Mean", colnames(dtTidy))
+colnames(dtTidy) <- gsub("std", "Std", colnames(dtTidy))
+colnames(dtTidy) <- gsub("fBodyBody", "fBody", colnames(dtTidy)) 
+colnames(dtTidy) <- gsub("Acc", "Acceleration", colnames(dtTidy))
+colnames(dtTidy) <- gsub("^t", "Temperature", colnames(dtTidy))
+colnames(dtTidy) <- gsub("^f", "Frequency", colnames(dtTidy))
+colnames(dtTidy) <- gsub("Gyro", "Gyroscope", colnames(dtTidy))
+colnames(dtTidy) <- gsub("Mag", "Magnitued", colnames(dtTidy))
 
 ##From the Tidy dataset, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 dtSummarize <- 
