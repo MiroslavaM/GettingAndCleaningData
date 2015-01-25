@@ -1,5 +1,3 @@
-setwd("C:/Users/Mirenceto/Desktop/Coursera/Data Science Specialization")
-
 #Loading plyr and dplyr packages
 library(plyr)
 library(dplyr)
@@ -58,7 +56,7 @@ dtTidy <- select(dtTidy, - ActivityCode)
 
 ##Appropriately label the data set with descriptive variable names. 
 ##We already did part of this using the function make.names (line 41), which transformed all names from features.txt to valid R names, before assigning them to our dataset. 
-##Remove the "..." and make the names in camel case (easier for reading) 
+##Remove the "..." and make the names in camel case (e.g. easier for reading) and more explanatory
 colnames(dtTidy) <- gsub("[/././.]", "", colnames(dtTidy))
 colnames(dtTidy) <- gsub("mean", "Mean", colnames(dtTidy))
 colnames(dtTidy) <- gsub("std", "Std", colnames(dtTidy))
