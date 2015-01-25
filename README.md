@@ -28,7 +28,7 @@ This repository contains 3 files:<br>
 <b>Course Project Step5</b> - Using the <i><b>dplyr</i></b> <i>group_by</i> function we group the data by "ActivityLablel" and "Subject". Then with <i>summarise_each</i> we get the average of each variable for each activity and each subject. Finally, we write the summarized dataset in seperate file.
 
 ##Notes
-For reviewing the dataset from step5, you can use the following code:
-data <- read.table("./SummarizedData.txt", header = TRUE) 
+For reviewing the dataset from step5, you can use the following code:<br>
+data <- read.table("./SummarizedData.txt", header = TRUE) <br>
 View(data)
 
