@@ -8,14 +8,14 @@
 5. remove ".", "..." with <i>gsub</> function
 6. changes to variable names:
   <ul>
-    <li>mean to Mean</li>
-    <li>std to Std</li>
-    <li>fBodyBody to fBody</li>
-    <li>Acc to Acceleration</li>
-    <li>t to Temperature</li>
-    <li>f to Frequency</li>
-    <li> Gyro to Gyroscope</li>
-    <li>Mag to Magnitued</li>
+    <li>"mean" to "Mean"</li>
+    <li>"std" to "Std"</li>
+    <li>"fBodyBody" to "fBody"</li>
+    <li>"Acc" to "Acceleration"</li>
+    <li>"^t" to "Temperature"</li>
+    <li>"^f" to "Frequency"</li>
+    <li>"Gyro" to "Gyroscope"</li>
+    <li>"Mag" to "Magnitued"</li>
 </ul>
 
 ###This is a codebook for SummarizedData.txt file that is a result of the Course Project
