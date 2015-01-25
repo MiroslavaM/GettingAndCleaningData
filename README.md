@@ -13,10 +13,10 @@ Dataset source for the project:<br>
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 ##Repository Content
-This repository contains 3 files
-1. README.md - information about steps followed for solving the course project
-2. Codebook.md - codebook of a dataset variables along with information about data cleaning performed. 
-3. run_analysis.R - R code that executes steps 1 to 5 with some short descriptions
+This repository contains 3 files:<br>
+1. README.md - information about steps followed for solving the course project.<br>
+2. Codebook.md - codebook of a dataset variables along with information about data cleaning performed. <br>
+3. run_analysis.R - R code that executes steps 1 to 5 with some short descriptions.<br>
 
 ##Steps followed for solving the course project
 
