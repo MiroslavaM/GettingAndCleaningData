@@ -27,4 +27,8 @@ This repository contains 3 files:<br>
 <b>Course Project Step4</b> -  We already did part of step this using the function <i>make.names</i>(which transformed all names from features.txt to valid R names, before assigning them to our dataset) when adding column names at Step1. The original variable names are quite self-explanatory and more detailed information is included in the Codebook.md. To make them a bit easier to read have removed the "..." left from <i>make.names</i> function and change the "mean" and "std" to "Mean" and "Std". <br><br>
 <b>Course Project Step5</b> - Using the <i><b>dplyr</i></b> <i>group_by</i> function we group the data by "ActivityLablel" and "Subject". Then with <i>summarise_each</i> we get the average of each variable for each activity and each subject. Finally, we write the summarized dataset in seperate file.
 
+##Notes
+For reviewing the dataset from step5, you can use the following code:
+data <- read.table("./SummarizedData.txt", header = TRUE) 
+View(data)
 
