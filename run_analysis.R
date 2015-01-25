@@ -41,7 +41,7 @@ allNames <- dtNames[,2]
 colnames(dtCombAll) <- make.names(dtNames[,2], unique = TRUE) 
 
 ##Extract only the measurements on the mean and standard deviation for each measurement.
-##Also included ActivityCode and Subject as we will need them for next step
+##Also include ActivityCode and Subject as we will need them for next steps
 dtCombAll <- tbl_df(dtCombAll)
 dtTidy <- select(dtCombAll, contains("mean"), contains("std"), ActivityCode, Subject)
 
@@ -54,7 +54,7 @@ dtTidy <- join(dtTidy, actLabels, by = "ActivityCode")
 dtTidy <- select(dtTidy, - ActivityCode)
 
 ##Appropriately label the data set with descriptive variable names. 
-##We already did part of this using the function make.names (line 43), which transformed all names from features.txt to valid R names, before assigning them to our dataset. 
+##We already did part of this using the function make.names (line 41), which transformed all names from features.txt to valid R names, before assigning them to our dataset. 
 ##Remove the "..." and make the names in camel case (easier for reading) 
 colnames(dtTidy) <- gsub ("[/././.]", "", colnames(dtTidy))
 colnames(dtTidy) <- gsub ("mean", "Mean", colnames(dtTidy))
