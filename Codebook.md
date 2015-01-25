@@ -3,7 +3,7 @@
 ##Variables from the transformed (final) dataset
 ###ActivityLabel 
     type - character 
-    Values: walking, walking_upstairs, walking_downstairs,sitting, standing,laying
+    Values: walking, walking_upstairs, walking_downstairs, sitting, standing, laying
     An identifier of the activity type
 ###Subject
     type - integer
