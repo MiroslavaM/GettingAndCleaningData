@@ -1,6 +1,6 @@
 #Codebook
 
-##Variables from the transofrmed (final) dataset
+##Variables from the transformend (final) dataset
 ###ActivityLabel <br>
     type - character <br>
     Values: walking, walking_upstairs, walking_downstairs,sitting, standing,laying<br><br>
