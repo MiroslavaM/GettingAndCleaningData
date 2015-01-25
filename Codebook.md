@@ -11,7 +11,6 @@
     An identifier of the subject who carried out the experiment
 ###Measurement Means
     type - numeric
-    featers variables
     Means of the measured feature variables for each activity and each subject. 
     (Features selected for this database come from the accelerometer and gyroscope 3-axial raw signals 
     tAcc-XYZ and tGyro-XYZ. For more information about the data collection see "FeatureSelection" down the file).
